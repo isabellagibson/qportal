@@ -22,6 +22,8 @@ def login(u, p):
         print(u + ':' + p)
         print(str(round(timeElapsed)))
         os._exit(0)
+    else:
+        print('bad login -- ' + p)
 
 stuId = input('Student ID: ')
 before = time.time() * 1000
